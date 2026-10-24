@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Launcher icon foreground: a note sheet with lines and a pencil. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Note sheet -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M34,30 h28 a4,4 0 0 1 4,4 v40 a4,4 0 0 1 -4,4 h-28 a4,4 0 0 1 -4,-4 v-40 a4,4 0 0 1 4,-4 z" />
+
+    <!-- Text lines on the sheet -->
+    <path
+        android:fillColor="#B0BEC5"
+        android:pathData="M36,42 h24 v3 h-24 z" />
+    <path
+        android:fillColor="#B0BEC5"
+        android:pathData="M36,50 h24 v3 h-24 z" />
+    <path
+        android:fillColor="#B0BEC5"
+        android:pathData="M36,58 h16 v3 h-16 z" />
+
+    <!-- Pencil -->
+    <path
+        android:fillColor="#FF8F00"
+        android:pathData="M60,64 l12,-12 6,6 -12,12 -8,2 z" />
+    <path
+        android:fillColor="#37474F"
+        android:pathData="M58,70 l2,-6 4,4 z" />
+</vector>

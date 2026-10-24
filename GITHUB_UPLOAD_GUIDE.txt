@@ -1,0 +1,41 @@
+SMART NOTES APP - UPLOAD GUIDE
+==============================
+
+This ZIP contains everything needed for the Kotlin Android Studio project.
+Do not upload the ZIP itself to GitHub. Extract it first.
+
+TO UPLOAD TO A NEW REPOSITORY
+1. Extract SmartNotesApp_FINAL_Complete_GitHub.zip.
+2. Open the extracted SmartNotesApp folder in Windows File Explorer.
+3. Press Ctrl+A to select ALL items, including .github, .gitignore and tools.
+   If you cannot see them: Windows File Explorer > View > Show > Hidden items.
+4. On GitHub, create an EMPTY repository (README Off, .gitignore None).
+5. Click Add file > Upload files; drag the selected project contents into it.
+6. Confirm these files are present in the upload list:
+      .github/workflows/android.yml
+      .gitignore
+      tools/check_project.py
+      settings.gradle.kts
+      app/build.gradle.kts
+7. Click Commit changes.
+8. Open the Actions tab to confirm Android Build turns GREEN.
+
+REPLACING YOUR EXISTING SmartNotesApp REPOSITORY
+- Open github.com/ayushdeepu/SmartNotesApp
+- Click Add file > Upload files.
+- Upload ALL extracted project contents (not the outer SmartNotesApp folder).
+- If GitHub flags same-name files, accept their replacement.
+- Make sure .github/workflows/android.yml and tools/check_project.py are both
+  present in the repository after the commit. Otherwise the old broken
+  GitHub workflow can remain.
+- Watch Actions tab; the completed workflow offers a debug APK artifact.
+
+TO RUN IN ANDROID STUDIO
+- File > Open > SmartNotesApp folder containing settings.gradle.kts.
+- Set Gradle JDK to 17 and allow dependencies / Android SDK 34 to download.
+- Run on an emulator or Android phone (Android 8.0 or later).
+
+NOTE
+Source/package static checks passed, but a full Android APK compilation
+could not be performed in the environment used to prepare the ZIP.
+Check Actions after upload and inspect any actual build errors.
